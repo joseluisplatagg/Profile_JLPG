@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import { Link, Navigate, useNavigate } from '@tanstack/react-router';
+import { Link, Navigate } from '@tanstack/react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouseChimney, faUsersViewfinder, faComputer, faPaperPlane
-  , faArrowRightToBracket
-  } from '@fortawesome/free-solid-svg-icons';
+import { faHouseChimney, faUsersViewfinder, faComputer, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import logoImg from '../../../public/logo.png'
 
 const Header = () => {
@@ -27,7 +25,7 @@ const Header = () => {
 
   return (
     /* CONTENEDOR FLOTANTE INVISIBLE: Controla la posición fija y la animación de ocultar */
-    <div 
+    <div data-aos="fade-up"
       className={`fixed top-0 left-0 right-0 z-50 w-full p-4 transition-transform duration-300 flex justify-center bg-transparent pointer-events-none
         ${visible ? 'translate-y-0' : '-translate-y-full'}`}
     >

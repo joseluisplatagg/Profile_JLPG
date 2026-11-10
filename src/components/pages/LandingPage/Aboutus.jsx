@@ -25,13 +25,13 @@ const Aboutus = () =>{
     return(
         <>
            <div className="">
-                <Hero title={"Quiénes somos"} image={""} className=""/>                
+                <Hero data-aos="fade-up" title={"Quiénes somos"} image={""} className=""/>                
             </div> 
 
-              <section className="w-full max-w-7xl mx-auto px-5 ssm:pt-10 md:py-16 flex flex-col gap-10">
+              <section data-aos="zoom-out" className="w-full max-w-7xl mx-auto px-5 ssm:pt-10 md:py-16 flex flex-col gap-10">
       
                 {/* BLOQUE 1: LA HISTORIA */}
-                <div className="bg-neutral-primary-soft p-6 md:p-10 border border-default rounded-2xl shadow-xl">
+                <div data-aos="flip-up" className="bg-neutral-primary-soft p-6 md:p-10 border border-default rounded-2xl shadow-xl">
                   <div className="flex flex-col md:flex-row items-center gap-8 w-full">
                     
                     {/* Contenedor de Imagen Simétrico */}
@@ -61,7 +61,7 @@ const Aboutus = () =>{
                 </div>
 
                 {/* BLOQUE 2: MISIÓN Y VISIÓN (Grid de 2 Columnas Simétricas) */}
-                <div className="grid grid-cols-1 md:grid-cols-2 bg-neutral-primary-soft border border-default rounded-2xl shadow-xl overflow-hidden divide-y md:divide-y-0 md:divide-x divide-default">
+                <div data-aos="flip-up" className="grid grid-cols-1 md:grid-cols-2 bg-neutral-primary-soft border border-default rounded-2xl shadow-xl overflow-hidden divide-y md:divide-y-0 md:divide-x divide-default">
                   
                   {/* TARJETA: MISIÓN */}
                   <div className="flex flex-col items-center justify-between p-8 text-center bg-white/40 dark:bg-cyan-700/40 hover:bg-emerald-800 dark:hover:bg-emerald-800 transition-colors duration-300">
@@ -96,14 +96,14 @@ const Aboutus = () =>{
 
                 </div>
 
-                <div className="bg-neutral-primary-soft border border-default rounded-2xl shadow-xl">
+                <div data-aos="slide-up" className="bg-neutral-primary-soft border border-default rounded-2xl shadow-xl">
                   <h3 className="text-2xl font-black text-heading text-center uppercase tracking-wider dark:text-black mb-4">
                     Experiencia Laboral
                   </h3>
                   <JobsComponent />
                 </div>
 
-                <div className="bg-neutral-primary-soft border border-default rounded-2xl shadow-xl">
+                <div data-aos="zoom-in" className="bg-neutral-primary-soft border border-default rounded-2xl shadow-xl">
                   <h3 className="text-2xl font-black text-heading text-center uppercase tracking-wider dark:text-black mb-4">
                     Skills
                   </h3>

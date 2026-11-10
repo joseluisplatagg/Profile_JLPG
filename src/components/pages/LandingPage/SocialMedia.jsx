@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { createRoute } from '@tanstack/react-router'
 import { Route } from '../../../routes/__root'
 
 const SocialMedia = ()  => {
@@ -12,27 +11,27 @@ const SocialMedia = ()  => {
       descripcion: "Entérate de nuestros servicios disponibles y promociones",
       color: "bg-[#1877F2] text-white",
       hover: "hover:shadow-[#1877F2]/30",
-      link: "https://facebook.com/JLPG_Services",
+      link: "https://www.facebook.com/profile.php?id=61596403492463",
       icon: faFacebook
     },
     {
       id: 2,
       nombre: "Instagram",
-      usuario: "@JLPG_Services",
+      usuario: "@jlpg_services_ti/",
       descripcion: "Biblioteca digital para exponer nuestra excelencia y cálidad",
       color: "bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white",
       hover: "hover:shadow-[#ee2a7b]/30",
-      link: "https://www.instagram.com/JLPG_Services",
+      link: "https://www.instagram.com/jlpg_services_ti/",
       icon: faInstagram
     },
     {
       id: 3,
       nombre: "WhatsApp Business",
-      usuario: "¡Haz tu Pedido!",
+      usuario: "¡Haz tu Cotización!",
       descripcion: "Escríbenos directo para realizar una cotización",
       color: "bg-[#25D366] text-white",
       hover: "hover:shadow-[#25D366]/30",
-      link: "https://wa.me", // Pon aquí tu enlace de WhatsApp
+      link: "https://wa.me/525538844860?text=Hola%2C%20quiero%20hacer%20una%20cotizaci%C3%B3n", // Pon aquí tu enlace de WhatsApp
       icon: faWhatsapp
     }
   ];

@@ -1,6 +1,5 @@
 import Contacto from "./Contacto";
 import Hero from "../../layouts/Hero";
-import { createRoute } from '@tanstack/react-router'
 import { Route } from '../../../routes/__root'
 import SocialMedia from './SocialMedia'
 import Email from "../../layouts/Email";
@@ -17,7 +16,7 @@ const Locations = () => {
                 
                 {/* LADO IZQUIERDO: EL MAPA */}
                 {/* 'w-full h-80 md:h-[450px]' le da una altura fija y proporcional en cualquier pantalla */}
-                <div className="w-full h-80 md:h-112.5 rounded-xl overflow-hidden shadow-md">
+                <div data-aos="fade-in"  className="w-full h-80 md:h-112.5 rounded-xl overflow-hidden shadow-md">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d234.92258673649636!2d-98.97342500577763!3d19.5947207470695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1792499174371!5m2!1sen!2smx" 
                         className="w-full h-full border-0"
@@ -29,14 +28,18 @@ const Locations = () => {
 
                 {/* LADO DERECHO: EL FORMULARIO DE CONTACTO */}
                 {/* Eliminamos el 'px-15' fijo que desbordaba el diseño en pantallas medianas */}
-                <div className="w-full px-2 md:px-6">
+                <div data-aos="slide-left"  className="w-full px-2 md:px-6">
                     <Contacto />
                 </div>    
 
-            </div>  
+            </div> 
 
-            <SocialMedia />
-            <Email />
+            <div data-aos="fade-up">
+                <SocialMedia   />
+            </div> 
+
+            
+            
         </div>
 
             </>

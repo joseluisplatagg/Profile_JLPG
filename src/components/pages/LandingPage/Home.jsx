@@ -1,4 +1,4 @@
-import { createRoute } from '@tanstack/react-router'
+
 import { Route } from '../../../routes/__root'
 import Services from './Services';
 import Aboutus from './Aboutus';
@@ -8,7 +8,7 @@ import Login from '../Login/Login'
 const Home = () => {    
     return (
       <>
-        <section className="relative bg-no-repeat bg-center bg-cover bg-neutral-primary dark:bg-[url('')] pt-24 md:pt-32 pb-12 overflow-hidden border-b border-default
+        <section data-aos="zoom-in" className="relative bg-no-repeat bg-center bg-cover bg-neutral-primary dark:bg-[url('')] pt-24 md:pt-32 pb-12 overflow-hidden border-b border-default
 ">
         {/* Capa de degradado sutil para asegurar que las letras se lean sobre la imagen de fondo */}
         <div className="absolute inset-0 bg-linear-to-r  z-0 pointer-events-none"></div>
@@ -82,15 +82,15 @@ const Home = () => {
                 
         </div>
       </section>
-      <div>
+      <div data-aos="fade-up-left">
           <Aboutus />
         </div>
 
-        <div>
+        <div data-aos="fade-up">
           <Services />
         </div>
         
-        <div>
+        <div data-aos="fade-up">
           <Locations />
         </div>
       </>

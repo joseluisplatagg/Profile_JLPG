@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from '@tanstack/react-router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faCalendarDays, faCalendarCheck, faGears, faGear
+import { faHouse, faCalendarDays, faCalendarCheck, faGears
   ,faAddressBook, faUsers, faDiceD6, faRightFromBracket
   ,faCalendarWeek, faClockRotateLeft, faCircleChevronDown
 } from '@fortawesome/free-solid-svg-icons';
 import logoImg from '../../../public/logo.png'
-import { icon } from '@fortawesome/fontawesome-svg-core';
 
 export function Sidebar({ isOpen, setIsOpen }) {
   const navigate = useNavigate()
-  const [isOpenMobile, setIsOpenMobile] = useState(false)
   
   // Estado para controlar qué dropdown está abierto de manera independiente
   const [openDropdowns, setOpenDropdowns] = useState({})
@@ -148,10 +146,10 @@ export function Sidebar({ isOpen, setIsOpen }) {
       )}
 
       {/* CONTENEDOR DEL SIDEBAR */}
-      <aside
-  className={`fixed top-0 left-0 h-screen w-64 z-40 flex flex-col justify-between p-4 bg-white border-r border-gray-200 shadow-xl select-none transition-transform duration-300 ease-in-out
-    ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
->
+      <aside data-aos="fade-up"
+        className={`fixed top-0 left-0 h-screen w-64 z-40 flex flex-col justify-between p-4 bg-white border-r border-gray-200 shadow-xl select-none transition-transform duration-300 ease-in-out
+          ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+      >
         <div>
           {/* 1. PARTE SUPERIOR: CABECERA */}
           <div className="flex items-center gap-3 pt-14 md:pt-2 pb-4 px-2 border-b border-gray-100">
